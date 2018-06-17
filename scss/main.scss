@@ -1,0 +1,13 @@
+@import 'media_query';
+@import 'color';
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body {
+    font-family: "Ubuntu", "Microsoft JhengHei", "微軟正黑體", "PingFang TC", "Open Sans", sans-serif, Arial;
+    color: $main-black;
+}
+a { &:hover{ text-decoration: none; } }
+
+img {
+    width: 50px;
+}
