@@ -2,12 +2,313 @@
 @import 'color';
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
+
 body {
     font-family: "Ubuntu", "Microsoft JhengHei", "微軟正黑體", "PingFang TC", "Open Sans", sans-serif, Arial;
     color: $main-black;
+    font-size: 18px;
+    @include phone-xxs-media {
+        font-size: 16px;
+    }
 }
-a { &:hover{ text-decoration: none; } }
+* { box-sizing: border-box; }
+a { text-decoration: none; }
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+@for $i from 1 to 7 {
+	h#{$i} { 
+        margin: 0; 
+    }
+}
+hr, p, address { 
+    margin:0; 
+    padding: 0;
+}
 
-img {
+
+
+@mixin transition() {
+    transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+
+header, footer {
+    text-align: center;
+    height: 100px;
+    padding: 20px;
+    a {
+        display: inline-block;
+        vertical-align: middle;
+        color: $main-black;
+    }
+    img.logo {
+        width: 60px;
+        height: auto;
+        margin-right: 15px;
+    }
+    ul {
+        display: inline-block;
+        a {
+            color: $main-black;
+            padding: 15px;
+            @include transition;
+            &:hover {
+                color: $mine-green;
+            }
+        }
+    }
+    @include phone-xxs-media {
+        height: 70px;
+        padding: 10px;
+        img.logo {
+            width: 50px;
+            margin-right: 10px;
+        }
+        ul {
+            a { padding: 10px; }
+        }
+    }
+}
+header {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .95);
+}
+footer {
+    padding: 25px 20px;
+    background: $mine-grey;
+    font-size: 16px;
+    img.logo {
+        width: 50px;
+    }
+    @include phone-xxs-media {
+        font-size: 14px;
+        padding: 15px 10px;
+        img.logo {
+            height: 40px;
+        }
+    }
+}
+
+
+a.link-blue {
+    color: $link-blue;
+    @include transition;
+    &:hover {
+        color: $link-blue-hover;
+    }
+}
+
+.clearfix {
+    clear: both;
+}
+.text-center {
+    text-align: center;
+}
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
+.container {
+    max-width: 970px;
+    margin: auto;
+    padding: 0 15px; 	
+}
+.hight-light {
+    color: $high-light !important;
+    font-weight: 500;
+}
+
+.caption {
+    color: $main-black;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 30px;
+    @include phone-xxs-media {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+.content-text {
+    color: $sub-black;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.68em;
+    @include phone-xxs-media {
+        font-size: 16px;
+    }
+    &.darker {
+        color: $main-black;
+        opacity: 0.9;
+    }
+}
+.fade-content-text {
+    color: $sub-black;
+    opacity: 0.6;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1em;
+    @include phone-xxs-media {
+        font-size: 14px;
+    }
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    @include phone-xxs-media {
+        padding-top: 40px;
+        padding-bottom: 40px; 
+    }
+}
+
+#main-page {
+    margin-top: 100px;
+    @include phone-xxs-media {
+        margin-top: 70px;
+    }
+    section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        @include phone-xxs-media {
+            padding-top: 20px;
+            padding-bottom: 20px; 
+        }
+    }
+}
+
+// about
+.my-photo {
+    margin: 40px auto 0;
+    max-width: 400px;
+    height: 300px;
+    border-radius: 4px;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: auto;
+    }
+    @include phone-xxs-media {
+        margin: 20px auto 0;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+}
+
+.contact-icon {
+    display: inline-block;
+    padding: 0 8px;
+    font-size: 22px;
+    color: $sub-black;
+    @include transition;
+    &:hover {
+        color: $mine-green;
+        &.gmail { color: $google; }
+        &.github { color: $github; }
+        &.codepen { color: $codepen; }
+        &.linkedin { color: $linkedin; }
+    }
+}
+
+.about-group {
+    &+.about-group {
+        margin-top: 24px;
+        @include phone-xxs-media {
+            margin-top: 18px;
+        }
+    }
+}
+.about_tools {
+    position: relative;
+    margin-top: 14px;
+    padding-top: 6px;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0;
+        width: 14px;
+        height: 1px;
+        background-color: $sub-black;
+        opacity: 0.85;
+    }
+    font-size: 16px;
+    color: $sub-black;
+    @include phone-xxs-media {
+        font-size: 14px;
+    }
+}
+
+.group-list {
+    margin-left: 1em;
+    margin-top: 1em;
+    li {
+        list-style-type: disc;
+        line-height: 1.68em;
+        &+li {
+            margin-top: .45em;
+        } 
+    }
+    &.no-margin-top {
+        margin-top: 0;
+    }
+}
+#up-to-top {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    cursor: pointer;
     width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 4px;
+    text-align: center;
+    transform: rotate(270deg);
+    color: $sub-black;
+    background-color: #fff;
+    opacity: .65;
+    @include transition;
+    &:hover {
+        opacity: 1;
+        color: $mine-green;
+    }
+}
+
+// index
+.works-link {
+    display: block;
+    padding: 15px;
+    max-width: 500px;
+    margin: auto;
+    img {
+        width: 100%;
+        border-radius: 4px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0 , 0);
+        @include transition;
+    }
+    .topic {
+        color: $main-black;
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 10px;
+        @include transition;
+    }
+    &:hover {
+        img {
+            box-shadow :0 10px 20px rgba(0, 0, 0, 0.15);
+            transform: translateY(-6px);
+        }
+        .topic {
+            color: $mine-green;
+        }
+    }
 }

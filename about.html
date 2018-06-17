@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="A UI/UX designer in Taiwan. Help you improve the user experience.">
+    <meta name="keywords" content="UI, UX, designer, front-end developer">
+    <meta property="og:title" content="Edie Lin | UI/UX Designer">
+    <meta property="og:description" content="A UI/UX designer inA UI/UX designer in Taiwan. Help you improve the user experience. Taiwan. Help you improve the user experience.">
+    <meta property="og:type" content="website">
+    <title>Edie Lin | UI/UX Designer</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/icons.css">
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+    <div id="app">
+        <div id="main-page">
+            <header-component></header-component>
+            <div class="container">
+                <div class="col-lg-6 col-sm-6 col-xs-12 col-xxs-12 pull-right">
+                    <div class="my-photo">
+                        <img src="https://api.fnkr.net/testimg/400x300/383838/ededed/?text=0_0" alt="Edie Lin">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-xs-12 col-xxs-12 pull-left">
+                    <section>
+                        <h2 class="caption">EDIE LIN, UI/UX DESIGNER</h2>
+                        <div class="content-text">
+                            <p v-html="temp.about_me"></p>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="caption">CONTACT & FIND ME</h2>
+                        <a class="contact-icon gmail" href="mailto:edielin.led@gmail.com"><span class="icon-envelop"></span></a>
+                        <a class="contact-icon" href="tel:+886910879567"><span class="icon-phone"></span></a>
+                        <a class="contact-icon github" href="https://github.com/edielin" target="_blank"><span class="icon-github"></span></a>
+                        <a class="contact-icon codepen" href="https://codepen.io/laclin/" target="_blank"><span class="icon-codepen"></span></a>
+                        <a class="contact-icon linkedin" href="https://www.linkedin.com/in/edie-lin-135574166" target="_blank"><span class="icon-linkedin2"></span></a>
+                    </section>
+                    <section>
+                        <h2 class="caption">EXPERIENCE</h2>
+                        <div class="about-group">
+                            <h4 class="content-text hight-light">{{temp.experience_6pm}}</h4>
+                            <p class="fade-content-text">Jan 2017 - Jun 2018 (1.5 years)</p>
+                            <ul class="group-list">
+                                <li v-for="(item, index) in temp.experience_6pm_list" v-html="item"></li>
+                            </ul>
+                        </div>
+                        <div class="about-group">
+                            <h4 class="content-text hight-light">{{temp.experience_iii}}</h4>
+                            <p class="fade-content-text">Jun 2016 - Dec 2016 (6 months)</p>
+                            <ul class="group-list">
+                                <li v-for="(item, index) in temp.experience_iii_list" v-html="item"></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="caption">EDUCATION</h2>
+                        <h4 class="content-text darker">{{temp.education}}</h4>
+                        <p class="fade-content-text">2005 - 2009　B.S. degree</p>
+                    </section>
+                    <section>
+                        <h2 class="caption">SKILL & TOOLS</h2>
+                        <div class="about-group">
+                            <h4 class="content-text hight-light">UI/UX</h4>
+                            <p class="content-text">{{temp.skill_uiux}}</p>
+                            <div class="about_tools">
+                                <i>draw.io, Adobe Creative Cloud</i>
+                            </div>
+                        </div>
+                        <div class="about-group">
+                            <h4 class="content-text hight-light">{{temp.skill_f2e}}</h4>
+                            <p class="content-text">{{temp.f2e_description}}</p>
+                            <div class="about_tools">
+                                <i>HTML, CSS(SCSS), JavaScript, Angular, Vue.js, PHP</i>
+                            </div>
+                        </div>
+                        <div class="about-group">
+                            <h4 class="content-text hight-light">{{temp.skill_collaboration}}</h4>
+                            <p class="content-text">{{temp.collaboration_description}}</p>
+                            <div class="about_tools">
+                                <i>Git, Slack, Trello, Zeplin, Adobe XD</i>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="caption">INTERESTS</h2>
+                        <ul class="group-list no-margin-top">
+                            <li v-for="(item, index) in temp.interest_list">{{item}}</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div id="up-to-top">
+                <span class="icon-arrow-right2"></span>
+            </div>
+            <footer-component></footer-component>
+        </div>
+    </div>
+</body>
+<script src="./js/vue.js"></script>
+<script src="./js/language_zh.js"></script>
+<script src="./js/language_en.js"></script>
+<script src='./js/index.js'></script>
+</html>

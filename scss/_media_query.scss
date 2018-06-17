@@ -34,14 +34,28 @@ $phones-xxs: 479px;
 $grid-max: 12;
 
 @for $i from 1 through $grid-max {
+	@include pc-lg-media() {
+		.col-lg-#{$i} {
+			width: $i/12 * 100%;
+			float: left;
+		}
+	}
+	@include pad-sm-media() {
+		.col-sm-#{$i} {
+			width: $i/12 * 100%;
+			float: left;
+		}
+	}
+	@include smallpad-xs-media() {
+		.col-xs-#{$i} {
+			width: $i/12 * 100%;
+			float: left;
+		}
+	}
 	@include phone-xxs-media() {
 		.col-xxs-#{$i} {
 			width: $i/12 * 100%;
 			float: left;
 		}
 	}
-}
-.container {
-	@include pad-sm-media { width: 100%; }
-	@include phone-xxs-media { padding: 0 20px; }	
 }

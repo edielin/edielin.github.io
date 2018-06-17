@@ -19,14 +19,45 @@
     <link rel="stylesheet" href="./style/main.css">
 </head>
 <body>
-    <div id="main">
-        <header-component></header-component>
-        <p>{{temp.title}}</p>
-        <span class="icon-phone"></span>
-        <ul>
-            <li v-for="(item, index) in temp.list" v-html="item"></li>
-        </ul>
-        <footer-component></footer-component>
+    <div id="app">
+        <div id="main-page">
+            <header-component></header-component>
+            <section>
+                <div class="container text-center">
+                    <h2 class="caption">EDIE LIN, UI/UX DESIGNER</h2>
+                    <div class="content-text">
+                        <p>{{temp.index_sentence1}}</p>
+                        <p>{{temp.index_sentence2}}</p>
+                        <p v-html="temp.index_sentence3"></p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container text-center">
+                    <h2 class="caption">WORK PROJECTS</h2>
+                    <div class="col-lg-4 col-sm-4">
+                        <a class="works-link" href="web-design-collection.html">
+                            <img src="./images/web_design_cover.jpg" alt="Web design collection cover">
+                            <h3 class="topic">Web Design Collection</h3>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-4">
+                        <a class="works-link" href="blossom-edugroup-app.html">
+                            <img src="./images/blossom_app_cover.jpg" alt="Blossom edugroup app cover">
+                            <h3 class="topic">Blossom Edugroup App</h3>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-4">
+                        <a class="works-link" href="product-redesign.html">
+                            <img src="./images/products_redesign_cover.jpg" alt="Product redesign cover">
+                            <h3 class="topic">Product Redesign</h3>
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+            <footer-component></footer-component>
+        </div>
     </div>
 </body>
 <script src="./js/vue.js"></script>
