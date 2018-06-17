@@ -57,7 +57,18 @@ new Vue ({
             f2e_description: '',
             skill_collaboration: '',
             collaboration_description: '',
-            interest_list: []
+            interest_list: [],
+            app_introduce: '',
+            app_5w1h: '',
+            app_who: '',
+            app_what_how: '',
+            app_why: '',
+            app_where_when: '',
+            app_5w1h_goodgood: '',
+            flow_chart: '',
+            wireframe: '',
+            prototyping: '',
+            app_design_high_light:''
         },
         lang_zh: true,
         lang: {

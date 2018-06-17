@@ -40,6 +40,29 @@ gulp.task('sass', function () {
         }));
 });
 
+// gulp.task('babel', function () {
+//     return gulp.src(['./js/**/*.js'])
+//         .pipe($.plumber())
+//         .pipe($.sourcemaps.init())
+//         .pipe($.concat('all.js'))
+//         .pipe($.babel({
+//             presets: ['es2015']
+//         }))
+//         .pipe(
+//             $.if(options.env === 'production', $.uglify({
+//                 compress: {
+//                     drop_console: true
+//                 }
+//             })
+//             )
+//         )
+//         .pipe($.sourcemaps.write('.'))
+//         .pipe(gulp.dest('./public/javascripts'))
+//         .pipe(browserSync.reload({
+//             stream: true
+//         }));
+// });
+
 gulp.task('browserSync', function () {
     browserSync.init({
         server: { baseDir: './' },
