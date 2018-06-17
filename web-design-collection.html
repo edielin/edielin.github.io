@@ -14,12 +14,96 @@
 </head>
 <body>
     <div id="app">
-        <section class="text-center">
-            <h2 class="caption">under construction...</h2>
+        <section>
+            <div class="container text-center">
+                <h2 class="caption">LJC EXPRESS</h2>
+                <p class="content-text" v-html="temp.ljc_intro"></p>
+                <ul class="check-tools">
+                    <li>Design</li>
+                    <li>Mockup</li>
+                    <li>HTML</li>
+                    <li>SCSS</li>
+                    <li>jQuery</li>
+                    <li>PHP</li>
+                </ul>
+                <img src="./images/web_design/ljc_mockup_combine.png" alt="LJC design mockup" class="ljc-mockup">
+            </div>
         </section>
-        <section class="text-center">
-            <a href="https://edielin.github.io" class="link-blue">https://edielin.github.io</a>
+        <section class="ljc-gradient-bg">
+            <div class="container text-center">
+                <h2 class="caption">MOCKUP</h2>
+                <p class="content-text">{{temp.mockup}}</p>
+                <img src="./images/web_design/ljc_guideline.png" alt="LJC guideline" class="ljc-mockup">
+            </div>
         </section>
+        <section>
+            <div class="container text-center">
+                <h2 class="caption">DEPLOY</h2>
+                <p class="content-text">{{temp.deploy}}</p>
+                <div id="before-after-box">
+                    <div class="before"></div>
+                    <div class="after"></div>
+                </div>
+            </div>
+        </section>
+        <section class="grey-bg">
+            <div class="container text-center">
+                <h2 class="caption">OTHERS WEB DESIGN</h2>
+                <div class="others-web-box">
+                    <div class="col-lg-6 col-sm-6 col-xs-6 col-xxs-12">
+                        <a href="https://www.6connect.biz" class="other-web-link" target="_blank">
+                            <img src="./images/web_design/cover_6connect.png" alt="Others web - 6Connect">
+                            <div class="link-content-text">
+                                <h4 class="link-topic">6Connect</h4>
+                                <p class="link-intro">{{temp.web_6c_desc}}</p>
+                                <span class="icon-link"></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-xs-6 col-xxs-12">
+                        <a href="https://www.6parcels.com/" class="other-web-link" target="_blank">
+                            <img src="./images/web_design/cover_6parcels.png" alt="Others web - 6Parcels">
+                            <div class="link-content-text">
+                                <h4 class="link-topic">6Parcels</h4>
+                                <p class="link-intro">{{temp.web_6p_desc}}</p>
+                                <span class="icon-link"></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-xs-6 col-xxs-12">
+                        <a href="http://140.115.236.72/demo-personal/AD103/web/C1600440/_myWeb2/" class="other-web-link" target="_blank">
+                            <img src="./images/web_design/cover_theletter.png" alt="Others web - the letter">
+                            <div class="link-content-text">
+                                <h4 class="link-topic">手紙 the letter</h4>
+                                <p class="link-intro">{{temp.web_letter_desc}}</p>
+                                <span class="icon-link"></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-xs-6 col-xxs-12">
+                        <a href="http://140.115.236.72/demo-projects/AD103/AD103G1/g1_hoyo/index.php" class="other-web-link" target="_blank">
+                            <img src="./images/web_design/cover_hoyo.png" alt="Others web - HO.YO">
+                            <div class="link-content-text">
+                                <h4 class="link-topic">好遊 HO.YO</h4>
+                                <p class="link-intro">{{temp.web_hoyo_desc}}</p>
+                                <span class="icon-link"></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </section>
+        <div class="bottom-link-box">
+            <a href="." class="bottom-link">
+                <span class="icon-arrow-left2"></span> home page
+            </a>
+            <a href="blossom-edugroup-app.html" class="bottom-link">
+                Blossom edugroup app
+                <span class="icon-arrow-right2"></span>
+            </a>
+        </div>
+        <footer-component></footer-component>
     </div>
 </body>
 <script src="./js/vue.js"></script>

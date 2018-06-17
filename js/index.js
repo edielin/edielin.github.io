@@ -2,16 +2,16 @@
 // v-on @是事件
 let headerStr = `
     <header>
-        <a href="index.html"><img :src='imgSrc' class="logo"></a>
+        <a href="."><img :src='imgSrc' class="logo"></a>
         <ul>
-            <a href="index.html">Work Projects</a>
+            <a href=".">Work Projects</a>
             <a href="about.html">About</a>
         </ul>
     </header>
 `;
 let footerStr =`
     <footer>
-        <a href="index.html"><img :src='imgSrc' class="logo"></a>
+        <a href="."><img :src='imgSrc' class="logo"></a>
         <a href="mailto: edielin.led@gmail.com">edielin.led@gmail.com</a>
     </footer>
 `;
@@ -68,7 +68,14 @@ new Vue ({
             flow_chart: '',
             wireframe: '',
             prototyping: '',
-            app_design_high_light:''
+            app_design_high_light:'',
+            ljc_intro: '',
+            mockup: '',
+            deploy: '',
+            web_6c_desc: '',
+            web_6p_desc: '',
+            web_letter_desc: '',
+            web_hoyo_desc: ''
         },
         lang_zh: true,
         lang: {
