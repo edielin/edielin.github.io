@@ -214,7 +214,7 @@ a.link-blue {
         &:hover {
             color: #ffffff;
             background-color: $link-hover-bg;
-            text-shadow: text-shadow: 0 0 5px rgba(0, 0, 0, .3);
+            text-shadow: 0 0 5px rgba(0, 0, 0, .3);
         }
         @include phone-xxs-media {
             width: 100%;
