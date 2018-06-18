@@ -260,7 +260,8 @@ section {
     overflow: hidden;
     img {
         width: 100%;
-        height: auto;
+        height: 100%;
+        object-fit: cover;
     }
     @include phone-xxs-media {
         margin: 20px auto 0;
@@ -330,7 +331,11 @@ section {
 #up-to-top {
     position: fixed;
     right: 50px;
-    bottom: 50px;
+    bottom: 20px;
+    @include phone-xxs-media {
+        right: 10px;
+        bottom: 10px;
+    }
     cursor: pointer;
     width: 50px;
     height: 50px;
@@ -530,16 +535,54 @@ section {
         background-size: cover;
     }
     .before {
-        z-index: 1;
+        z-index: 2;
         left: 0;
         background-image: url(../images/web_design/ljc_html.png);
         width: 40%;
+        &:after{
+            position: absolute;
+            z-index: 2;
+            content: '';
+            top: 0;
+            bottom: 0;
+            right: -1px;
+            width: 2px;
+            background: #ffffff;
+        }
+        .drag-icon {
+            position: absolute;
+            z-index: 1;
+            top: 0; bottom: 0;
+            right: -25px;
+            width: 50px;
+            height: 50px;
+            border: 3px solid #fff;
+            border-radius: 50%;
+            margin: auto;
+            background-color: rgba(0, 0, 0, .65);
+            font-size: 13px;
+            line-height: 47px;
+            color: #fff;
+        }
     }
     .after {
-        z-index: 2;
+        z-index: 1;
         right: 0;
         background-image: url(../images/web_design/ljc_screenshot.png);
-        width: 60%;
+        width: 100%;
+    }
+    #ba-bar {
+        cursor: col-resize;
+        position: absolute;
+        z-index: 3;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 100%;
+        opacity: 0;
+        outline : none;
     }
 }
 .others-web-box {

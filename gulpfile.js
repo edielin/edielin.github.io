@@ -57,7 +57,7 @@ gulp.task('sass', function () {
 //             )
 //         )
 //         .pipe($.sourcemaps.write('.'))
-//         .pipe(gulp.dest('./public/javascripts'))
+//         .pipe(gulp.dest('./public_js'))
 //         .pipe(browserSync.reload({
 //             stream: true
 //         }));

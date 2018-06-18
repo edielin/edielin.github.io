@@ -41,8 +41,13 @@
                 <h2 class="caption">DEPLOY</h2>
                 <p class="content-text">{{temp.deploy}}</p>
                 <div id="before-after-box">
-                    <div class="before"></div>
+                    <div class="before">
+                        <div class="drag-icon">
+                            <span class="icon-arrow-left2"></span>&nbsp;&nbsp;<span class="icon-arrow-right2"></span>
+                        </div>
+                    </div>
                     <div class="after"></div>
+                    <input type="range" id="ba-bar" min="0" max="100" value="40">
                 </div>
             </div>
         </section>
@@ -107,6 +112,7 @@
     </div>
 </body>
 <script src="./js/vue.js"></script>
+<script src="./js/jquery.min.js"></script>
 <script src="./js/language_zh.js"></script>
 <script src="./js/language_en.js"></script>
 <script src='./js/index.js'></script>

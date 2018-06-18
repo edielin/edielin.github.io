@@ -12,7 +12,7 @@ let headerStr = `
 let footerStr =`
     <footer>
         <a href="."><img :src='imgSrc' class="logo"></a>
-        <a href="mailto: edielin.led@gmail.com">edielin.led@gmail.com</a>
+        <a href="mailto:edielin.led@gmail.com">edielin.led@gmail.com</a>
     </footer>
 `;
 Vue.component('header-component', {
@@ -90,8 +90,13 @@ new Vue ({
             } else {
                 this.temp = this.lang.en;
             }
+        },
+        scroll_to_top: function (event) {
+            event.preventDefault();
+            $('body, html').animate({
+                scrollTop: 0,
+            }, 700);
         }
-
     }, mounted: function () {
         if (this.lang_zh) {
             this.temp = this.lang.zh;
@@ -100,3 +105,13 @@ new Vue ({
         }
     }
 });
+
+const rangeBar = document.querySelector('#ba-bar');
+const beforePic = document.querySelector('#before-after-box .before');
+
+function dragBar () {
+    let wid = this.value;
+    beforePic.style.width = wid + '%';
+}
+
+rangeBar.addEventListener('input', dragBar, false);
