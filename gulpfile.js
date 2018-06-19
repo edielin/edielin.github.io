@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+const babel = require('gulp-babel');
 const $ = require('gulp-load-plugins')();
 const autoprefixer = require('autoprefixer');
 const postcss = require('gulp-postcss');
@@ -40,28 +41,11 @@ gulp.task('sass', function () {
         }));
 });
 
-// gulp.task('babel', function () {
-//     return gulp.src(['./js/**/*.js'])
-//         .pipe($.plumber())
-//         .pipe($.sourcemaps.init())
-//         .pipe($.concat('all.js'))
-//         .pipe($.babel({
-//             presets: ['es2015']
-//         }))
-//         .pipe(
-//             $.if(options.env === 'production', $.uglify({
-//                 compress: {
-//                     drop_console: true
-//                 }
-//             })
-//             )
-//         )
-//         .pipe($.sourcemaps.write('.'))
-//         .pipe(gulp.dest('./public_js'))
-//         .pipe(browserSync.reload({
-//             stream: true
-//         }));
-// });
+gulp.task('build', () =>
+    gulp.src('./src_js/**')
+        .pipe(babel())
+        .pipe(gulp.dest('./dist_js'))
+);
 
 gulp.task('browserSync', function () {
     browserSync.init({
@@ -71,11 +55,12 @@ gulp.task('browserSync', function () {
 });
 
 gulp.task('watch', function () {
+    gulp.watch('./src_js/**', ['build']);
     gulp.watch(['./scss/**/*.scss'], ['sass']);
     gulp.watch("*.html").on('change', browserSync.reload);
     gulp.watch("*.js").on('change', browserSync.reload);
 });
 
-gulp.task('build', ['sequence'])
+// gulp.task('build', ['sequence']);
 
 gulp.task('default', ['sass', 'watch', 'browserSync']);
