@@ -103,4 +103,6 @@ function dragBar() {
     beforePic.style.width = wid + '%';
 }
 
-rangeBar.addEventListener('input', dragBar, false);
+if (rangeBar) {
+    rangeBar.addEventListener('input', dragBar, false);
+}
