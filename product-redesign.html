@@ -20,20 +20,125 @@
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="./style/icons.css">
+    <link rel="stylesheet" href="./style/owl.carousel.min.css">
+    <link rel="stylesheet" href="./style/owl.theme.default.min.css">
     <link rel="stylesheet" href="./style/main.css">
 </head>
 <body>
     <div id="app">
-        <section class="text-center">
-            <h2 class="caption">under construction...</h2>
+        <section class="hidden-caption">
+            <div class="container text-center">
+                <h2 class="caption">Product Redesign</h2>
+                <img class="cover-img" src="./images/product_redesign/first_cover_img.jpg" alt="Product redesign - 6Connect & 6Parcels">
+                <p class="content-text" v-html="temp.introduce_6c_6p"></p>
+                <ul class="check-tools">
+                    <li>UI</li>
+                    <li>UX</li>
+                    <li>Flow chart</li>
+                    <li>Wireframe</li>
+                    <li>HTML</li>
+                    <li>CSS3</li>
+                    <li>Bootstrap</li>
+                    <li>Git</li>
+                    <li>Angular</li>
+                    <li>Web design</li>
+                    <li>App design</li>
+                </ul>
+            </div>
+        </section>
+        <section class="question-mark-bg">
+            <div class="container text-center">
+                <h2 class="caption">BEFORE THE BEGINNING</h2>
+                <p class="content-text">{{temp.before_beginning}}</p>
+            </div>
+        </section>
+        <section class="grey-bg">
+            <div class="container">
+                <div class="redesign-note-box">
+                    <div class="redesign-note-group" v-for="(item, index) in temp.redesign_note_list">
+                        <span class="counter-number">0{{index+1}}</span>
+                        <h4 class="note-topic">{{item[0]}}</h4>
+                        <p class="content-text">{{item[1]}}</p>
+                    </div>
+                    <div class="redesign-note-conclusion">
+                        <p class="content-text">{{temp.redesign_note_conclusion}}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container text-center">
+                <h2 class="caption">{{temp.redesign_phase1_title}}</h2>
+                <p class="content-text" v-html="temp.redesign_phase1_content"></p>
+                <img class="section-main-img" src="./images/product_redesign/customer_courier-01.png" alt="Define the target audience">
+            </div>
+        </section>
+        <section class="padding-none">
+            <div class="container">
+                <div class="col-lg-6 col-sm-6 col-xs-12 text-center-xs">
+                    <h2 class="caption">{{temp.redesign_phase2_title}}</h2>
+                    <p class="content-text margin-bottom">{{temp.redesign_phase2_content}}</p>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-xs-12 text-center">
+                    <img src="./images/product_redesign/markus-spiske-207946-unsplash.jpg" alt="Photo by Markus Spiske on Unsplash">
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="col-lg-6 col-sm-6 col-xs-12 pull-right text-center-xs">
+                    <h2 class="caption">{{temp.redesign_phase3_title}}</h2>
+                    <p class="content-text margin-bottom">{{temp.redesign_phase3_content}}</p>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-xs-12 text-center-xs">
+                    <img src="./images/product_redesign/people-standing-together-in-shape-of-an-arrow.png" alt="People standing together in shape of an arrow">
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </section>
+        <section class="grey-bg">
+            <div class="container text-center">
+                <h2 class="caption">CASE RESULT #1 THE HOME PAGE</h2>
+                <div class="owl-carousel owl-theme">
+                    <div class="item" v-for="(item, index) in temp.case_result1_carousel">
+                        <p class="content-text">{{item[0]}}</p>
+                        <img class="section-main-img" v-bind:src="item[1]" v-bind:alt="item[2]">
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="text-center">
-            <a href="https://edielin.github.io" class="link-blue">https://edielin.github.io</a>
+            <h2 class="caption">TO BE CONTINUED 🖖</h2>
         </section>
+        <div class="bottom-link-box">
+            <a href="blossom-edugroup-app.html" class="bottom-link">
+                <span class="icon-arrow-left2"></span> Blossom edugroup app
+            </a>
+            <a href="about.html" class="bottom-link">
+                About Edie
+                <span class="icon-arrow-right2"></span>
+            </a>
+        </div>
+        <footer-component></footer-component>
     </div>
 </body>
 <script src="./dist_js/vue.js"></script>
 <script src="./dist_js/language_zh.js"></script>
 <script src="./dist_js/language_en.js"></script>
+<script src="./dist_js/jquery.min.js"></script>
+<script src="./dist_js/owl.carousel.min.js"></script>
 <script src='./dist_js/index.js'></script>
+<script>
+    $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+            center: true,
+            items: 1,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 20000,
+            autoplayHoverPause: true
+        });
+    });
+</script>
 </html>

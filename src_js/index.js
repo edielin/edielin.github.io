@@ -75,7 +75,18 @@ new Vue ({
             web_6c_desc: '',
             web_6p_desc: '',
             web_letter_desc: '',
-            web_hoyo_desc: ''
+            web_hoyo_desc: '',
+            introduce_6c_6p: '',
+            before_beginning: '',
+            redesign_note_list: [],
+            redesign_note_conclusion: '',
+            redesign_phase1_title: '',
+            redesign_phase1_content: '',
+            redesign_phase2_title: '',
+            redesign_phase2_content: '',
+            redesign_phase3_title: '',
+            redesign_phase3_content: '',
+            case_result1_carousel: []
         },
         lang_zh: true,
         lang: {

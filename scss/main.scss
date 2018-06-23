@@ -184,7 +184,8 @@ a.link-blue {
     }
 }
 .check-tools {
-    margin-top: 16px;
+    max-width: 640px;
+    margin: 16px auto 0;
     li {
         padding: 8px 8px 8px 25px;
         background-image: url(../images/check_symbol.png);
@@ -227,11 +228,23 @@ a.link-blue {
     }
 }
 section {
+    overflow: hidden;
     padding-top: 80px;
     padding-bottom: 80px;
     @include phone-xxs-media {
         padding-top: 40px;
         padding-bottom: 40px; 
+    }
+    .section-main-img {
+        display: block;
+        max-width: 100%;
+        margin: 30px auto 0;
+        @include phone-xxs-media {
+            margin-top: 20px;
+        }
+    }
+    &.padding-none {
+        padding: 0;
     }
 }
 
@@ -646,6 +659,91 @@ section {
         img {
             display: block;
             width: 100%;
+        }
+    }
+}
+
+// redesign
+.hidden-caption {
+    .caption {
+        display: none;
+    }
+    .cover-img {
+        width: 100%;
+        margin: 0 auto 30px;
+        @include phone-xxs-media {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.question-mark-bg {
+    background-image: url(../images/product_redesign/question_marks_bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    .caption, .content-text {
+        color: #ffffff;
+        text-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    }
+}
+
+.redesign-note-box {
+    font-size: 0;
+    margin: -24px -30px -30px;
+    @include phone-xxs-media {
+        margin: 0px -10px -15px;
+    }
+    .redesign-note-group {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+        padding: 30px;
+        @include phone-xxs-media {
+            width: 100%;
+            padding: 24px 10px 15px;
+        }
+        .counter-number {
+            position: absolute;
+            top: 0; left: 30px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #E0EEEB;
+            @include phone-xxs-media {
+                font-size: 20px;
+                left: 10px;
+            }
+        }
+        .note-topic {
+            font-size: 18px;
+            font-weight: bold;
+            color: $main-black;
+            margin-bottom: .45rem;
+            @include phone-xxs-media {
+                font-size: 16px;
+            }
+        }
+    }
+    .redesign-note-conclusion {
+        position: relative;
+        background-color: #E0EEEB;
+        border-radius: 10px;
+        display: inline-block;
+        vertical-align: top;
+        width: calc(50% - 60px);
+        padding: 15px 20px;
+        margin: 0 30px 30px;
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: -20px;
+            border: 20px solid transparent;
+            border-bottom: 10px solid #E0EEEB;
+        }
+        @include phone-xxs-media {
+            margin: 5px 10px 30px 30px;
+            width: calc(100% - 60px);
         }
     }
 }

@@ -1,5 +1,5 @@
 let zh = {
-    'index_sentence1': '「不斷吸取新的觀點和方法，探索周圍環境中人們的各個方面。」',
+    'index_sentence1': '「不斷吸取新的觀點和方法，不停探索周圍環境中人們的各個方面。」',
     'index_sentence2': '擁有兩年的 UI/UX 設計經驗，目前正在尋找 UX 設計師的相關工作。是個網路成癮者，但也喜愛在大自然裡走動',
     'index_sentence3': '可以在<a href="./download/edie_lin_resume2018_zh.pdf" class="link-blue">這邊下載我的簡歷</a> 💡',
     'about_me': '哈囉你好，我是林佳瑩，你可以叫我 Edie (音同ED)，擁有兩年的 UI/UX 設計經驗，可幫助您提升用戶體驗及轉換率。而與其說 UX 是一種技能，我更傾向它是一種思考模式，透過不斷思索、模擬與測試驗證，一步一步建構出符合使用者需求、商業目標、技術能力的優良產品。了解前端開發，具備能與工程師溝通的共同語言。<br />歡迎<a href="./download/edie_lin_resume2018_zh.pdf" class="link-blue">下載我的簡歷</a> 💡',
@@ -7,16 +7,17 @@ let zh = {
     'experience_6pm_list': [
         '為公司產品重新設計的主要設計師',
         '找出用戶的需求和要求，進而改善用戶體驗及介面',
-        '確保產品功能和使用流程符合使用者需求，幫助他們做出正確的決策',
+        '確保產品功能和使用流程符合使用者需求，幫助使用者做出正確的決策',
         '與工程師密切合作，設計和開發出易用、合乎邏輯並擁有一致性的使用者介面',
-        '積極地去做全面性的了解並用心體會使用者感受',
+        '積極地去做全面性的了解，站在使用者的角度了解使用者的痛點與需求',
+        '設計產出有理有據，幫助團隊取得共識',
         '提供 UI/UX 設計給 3 個<a href="blossom-edugroup-app.html" class="link-blue" target="_blank">應用程式</a>',
         '設計並建造出 3 個<a href="web-design-collection.html" class="link-blue" target="_blank">網站</a>'
     ],
-    'experience_iii': 'Web/App前端設計開發工程師養成班 | 資訊工業策進會',
+    'experience_iii': 'Web/App 前端設計開發工程師養成班 | 資訊工業策進會',
     'experience_iii_list': [
         '從頭發想並獨立架設出 1 個<a href="http://140.115.236.72/demo-personal/AD103/web/C1600440/_myWeb2/" class="link-blue" target="_blank">靜態網站</a><br />(視覺設計 1st、最佳 RWD 2nd、最佳網站 2nd)',
-        '1 個團隊<a href="http://140.115.236.72/demo-projects/AD103/AD103G1/g1_hoyo/index.php" class="link-blue" target="_blank">合作網站</a>，主要負責首頁及會員專區',
+        '1 個團隊<a href="http://140.115.236.72/demo-projects/AD103/AD103G1/g1_hoyo/index.php" class="link-blue" target="_blank">合作網站</a>，串接後端資料庫，主要負責首頁及會員專區',
         '1 個應用程式介面設計',
     ],
     'education': '資訊模擬與設計學系 | 實踐大學',
@@ -46,8 +47,30 @@ let zh = {
     'ljc_intro': '一個新加坡物流公司的形象網站。初期設計困難點在於對方所提供的資料雜亂無章，而人類對於資訊的理解及記憶從分類開始，我從中找出有意義並相關聯的組合，點出標題，再賦予CTA，使畫面呈現能具有層次感。<br />你可以在<a href="https://www.ljcexpress.com.sg/" class="link-blue" target="_blank">這裡</a>找到它',
     'mockup': '一般我會先製作平面視覺圖供客戶參閱，確認無誤後才會進入 HTML 切版的部分。在繪製 Mockup 時，同時也在建立視覺模組、訂下一致性的設計規範。前置作業定義出標準，團隊溝通及共識上便能有所依據，對後續的工作十分有利。',
     'deploy': '網站也是由我部屬配置，在設計時便已先評估可行性，避免出現不切實際的虛華畫面。越有充分的規劃，越能降低所花費的時間及困難度。最後在部屬 HTML 及 CSS 便是相對輕鬆且快速。',
-    'web_6c_desc': '形象網站。連結企業和物流公司之間的系統平台',
-    'web_6p_desc': '形象網站。為物流公司的打造的管理系統',
-    'web_letter_desc': '資策會個人作品',
-    'web_hoyo_desc': '資策會專題作品'
+    'web_6c_desc': '連結中小企業和物流公司之間的系統平台',
+    'web_6p_desc': '為小型物流公司的打造的快遞管理平台',
+    'web_letter_desc': '資策會個人作品。文具店靜態網站',
+    'web_hoyo_desc': '資策會團體作品。鐵路旅遊網站，串接後端資料庫',
+    'introduce_6c_6p': '6Connect, 6Parcels 是六點互動科技的主要產品，皆屬於物流業但針對不同目標用戶所建構的系統平台。<br /><a href="https://www.6connect.biz/app/system#/register/" class="link-blue" target="_blank">6Connect</a> 匯集多間物流公司由他們提供貨物運送服務以滿足中小型企業的物流需求，也方便用戶快速比價；<a href="https://app.6parcels.com/app/system#/courier/register" class="link-blue" target="_blank">6Parcels</a> 則是快遞管理平台，可幫助小型物流公司保持與大公司的競爭力，同時提供專屬司機使用的行動 App。',
+    'before_beginning': '什麼才是有價值的 Redesign？ 我們需要注意什麼？',
+    'redesign_note_list': [
+        ['Redesign 的目的','＂好看＂不是我們的設計目的，更多的是為了找出問題進而解決問題。'],
+        ['真實的場景限制', '需要了解產品的商業背景、團隊的技術能力、用戶所渴望的，才能幫助我們做出合理的設計判斷。'],
+        ['別人怎麼做的','用戶對於同一類產品的習慣與認知不會隨時產生變化，參考別人有利於我們了解為什麼這麼做和為什麼不那麼做。'],
+        ['進行設計驗證','跟隨用戶流程去實施設計，走一輪自己的方案，測試是否能滿足用戶需求。'],
+        ['提升拓展性','不僅考慮到解決問題，還要考慮到能在原有的基礎上增添新的東西，給予更多彈性空間。']
+    ],
+    'redesign_note_conclusion': 'Redesign 不是僅改變視覺風格，而是結合真實情境去做更加全面體系化的思考設計。「不間斷地優化設計與假設，就是 Redesign 的重點。」',
+    'redesign_phase1_title': 'PHASE #1 釐清不同目標用戶各自的需求',
+    'redesign_phase1_content': '一開始，公司內沒有一個能完整規畫並進行監督的團隊，開發人員皆是斷斷續續加入，遺留下來的信息破碎、凌亂且已不可考。雖為兩項產品，實際上仍是導入同一個系統架構，在資訊呈現上也沒有區分出兩者間的差異，導致使用者在進入系統後，直接面對超出他們所需要的資訊量，時常感到困惑不知該從何開始。<br />首要目標：<span class="hight-light">理解兩種不同用戶，提供他們所想要的個別需求</span>。',
+    'redesign_phase2_title': 'PHASE #2 統一模組，減少重複代碼',
+    'redesign_phase2_content': '雖然是使用同一個模板 UI，既使功能與外型一樣，但每個不同的開發人員就產生出每個不同的寫法，導致系統內部的代碼體積與日俱增，不僅十分難以維護，也增添了許多後續開發上的困難。（事先做好規劃及規範真的很重要啊）',
+    'redesign_phase3_title': 'PHASE #3 從根基上延伸，拓展新功能',
+    'redesign_phase3_content': '隨著用戶漸多，用戶開始回饋產品能增添的新功能（如：一次大量送件、連結電子商店）。要如何在用戶已習慣的流程形式中，不突兀且自然地加入新的步驟，這是 Redesign 最困難的部分。',
+    'case_result1_carousel': [
+        ['6Connect 的目標客群我們稱之為 Customer，主要是為了尋找符合物流需求又低價的快遞服務。在 Customer 登入後，在主畫面提示他們可以做些什麼並且加入誘因 （如：想要得到更優惠的價格嗎？那就設置一個付款帳號吧），下方則用詢問對話的方式提醒用戶使用這個系統的主要目的 — 現在想要寄送什麼類型的貨物呢？在回答問題的同時，也等於快速開啟一張運送需求單，成功降低用戶初次開單的難度。',
+            './images/product_redesign/case_home_page_6c.png', '6Connect - the home page'],
+        ['6Parcels 的目標客群我們稱之為 Courier，他們的目的是能在此系統簡易地建立並管理自己的運送單，或透過連接 6Connect 獲取更多訂單量。而不管 Courier 是否要連接 6Connect，他們的首要且必要的動作就是建立至少一項貨物運送服務，有了服務才能繼續進行開單或接單的工作。於是在 Courier 初次登入系統時，清楚地告知用戶第一件要做的事 — "Create Services"。此後，用戶不再困惑為什麼總是無法開單或等不到貨運需求。',
+        './images/product_redesign/case_home_page_6p.png', '6Parcels - the home page']
+    ]
 }
