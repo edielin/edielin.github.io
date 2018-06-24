@@ -183,6 +183,9 @@ a.link-blue {
         font-size: 14px;
     }
 }
+.fade-opacity {
+    opacity: 0.7;
+}
 .check-tools {
     max-width: 640px;
     margin: 16px auto 0;
@@ -268,7 +271,7 @@ section {
 .my-photo {
     margin: 40px auto 0;
     max-width: 400px;
-    height: 300px;
+    height: 500px;
     border-radius: 4px;
     overflow: hidden;
     img {

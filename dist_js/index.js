@@ -40,6 +40,8 @@ new Vue({
             experience_6pm_list: [],
             experience_iii: '',
             experience_iii_list: [],
+            experience_service: '',
+            experience_print: '',
             education: '',
             skill_uiux: '',
             skill_f2e: '',

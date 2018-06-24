@@ -34,7 +34,7 @@
             <div class="container">
                 <div class="col-lg-6 col-sm-6 col-xs-12 col-xxs-12 pull-right">
                     <div class="my-photo">
-                        <img src="https://api.fnkr.net/testimg/400x300/383838/ededed/?text=0_0" alt="Edie Lin">
+                        <img src="./images/edie_lin.jpg" alt="Edie Lin">
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-6 col-xs-12 col-xxs-12 pull-left">
@@ -67,6 +67,14 @@
                             <ul class="group-list">
                                 <li v-for="(item, index) in temp.experience_iii_list" v-html="item"></li>
                             </ul>
+                        </div>
+                        <div class="about-group">
+                            <h4 class="content-text">{{temp.experience_service}}</h4>
+                            <p class="fade-content-text">2011 - Apr 2016 (4.5 years)</p>
+                        </div>
+                        <div class="about-group">
+                            <h4 class="content-text">{{temp.experience_print}}</h4>
+                            <p class="fade-content-text">2010 -2011 (1 year)</p>
                         </div>
                     </section>
                     <section>

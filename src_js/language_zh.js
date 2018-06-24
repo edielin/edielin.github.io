@@ -20,6 +20,8 @@ let zh = {
         '1 個團隊<a href="http://140.115.236.72/demo-projects/AD103/AD103G1/g1_hoyo/index.php" class="link-blue" target="_blank">合作網站</a>，串接後端資料庫，主要負責首頁及會員專區',
         '1 個應用程式介面設計',
     ],
+    'experience_service': '店長 | 文創型餐飲店家 （服務業）',
+    'experience_print': '商品包裝平面設計 | 順鴻印刷',
     'education': '資訊模擬與設計學系 | 實踐大學',
     'skill_uiux': '製作 User story, flow charts, wireframes, sitemaps, prototyping',
     'skill_f2e': '前端開發',
