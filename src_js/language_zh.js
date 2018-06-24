@@ -89,5 +89,6 @@ let zh = {
         './images/product_redesign/case2_img3.jpg',
         './images/product_redesign/case2_img4.jpg',
         './images/product_redesign/case2_img5.jpg',
-    ]
+    ],
+    'result2_content': '測試上線後，持續蒐集用戶回饋加以改善，連結電商的基本功能及程序皆已完成，用戶尚無過大的抱怨，可喜可賀。'
 }

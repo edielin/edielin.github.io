@@ -81,7 +81,8 @@ new Vue({
             redesign_result1: '',
             redesign_case2_contect: '',
             redesign_case2_methods: [],
-            case1_carousel_url: []
+            case1_carousel_url: [],
+            result2_content: ''
         },
         lang_zh: true,
         lang: {

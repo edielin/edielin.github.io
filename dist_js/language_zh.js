@@ -50,5 +50,6 @@ var zh = {
     'redesign_result1': '由於資訊量降低，用戶的視覺負擔也相對降低，再加上步驟式的引導語句，成功地提升了產品的易用度，大幅減少新客戶的尋求協助來電。',
     'redesign_case2_contect': '在不違反產品的介面及流程操作下，要增添新的功能，我循環以下這些方式藉以達成此階段任務：',
     'redesign_case2_methods': ['繪製流程圖', '大量參考同一類型的產品如何呈現', '製作線框圖，確認步驟流程是否順暢', '不停地詢問＂為什麼＂（必要之惡）', '與技術團隊討論設計上的可行性'],
-    'case1_carousel_url': ['./images/product_redesign/case2_img1.jpg', './images/product_redesign/case2_img2.jpg', './images/product_redesign/case2_img3.jpg', './images/product_redesign/case2_img4.jpg', './images/product_redesign/case2_img5.jpg']
+    'case1_carousel_url': ['./images/product_redesign/case2_img1.jpg', './images/product_redesign/case2_img2.jpg', './images/product_redesign/case2_img3.jpg', './images/product_redesign/case2_img4.jpg', './images/product_redesign/case2_img5.jpg'],
+    'result2_content': '測試上線後，持續蒐集用戶回饋加以改善，連結電商的基本功能及程序皆已完成，用戶尚無過大的抱怨，可喜可賀。'
 };
