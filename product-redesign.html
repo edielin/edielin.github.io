@@ -99,17 +99,45 @@
         </section>
         <section class="grey-bg">
             <div class="container text-center">
-                <h2 class="caption">CASE RESULT #1 THE HOME PAGE</h2>
+                <h2 class="caption">CASE #1 THE HOME PAGE</h2>
                 <div class="owl-carousel owl-theme">
-                    <div class="item" v-for="(item, index) in temp.case_result1_carousel">
+                    <div class="item" v-for="(item, index) in temp.case1_carousel">
                         <p class="content-text">{{item[0]}}</p>
                         <img class="section-main-img" v-bind:src="item[1]" v-bind:alt="item[2]">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="text-center">
-            <h2 class="caption">TO BE CONTINUED 🖖</h2>
+        <section class="celebration-bg">
+            <div class="container text-center">
+                <h2 class="caption">RESULT</h2>
+                <p class="content-text">{{temp.redesign_result1}}</p>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2 class="caption">CASE #2 CONNECT E-COMMERCE</h2>
+                <p class="content-text">{{temp.redesign_case2_contect}}</p>
+                <div>
+                    <div class="col-lg-6 col-sm-6 col-xs-12">
+                        <ul class="case-methods-list">
+                            <li v-for="(item, index) in temp.redesign_case2_methods">{{item}}</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-xs-12">
+                        <div class="owl-carousel owl-theme">
+                            <img class="case-carousel-img" v-for="(item, index) in temp.case1_carousel_url"  v-bind:src="item">
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </section>
+        <section class="grey-bg ecommerce-bg">
+            <div class="container text-center">
+                <h2 class="caption">RESULT</h2>
+                <p class="content-text">測試上線後，持續蒐集用戶回饋加以改善，連結電商的基本功能及程序皆已完成，用戶尚無過大的抱怨，可喜可賀。</p>
+            </div>
         </section>
         <div class="bottom-link-box">
             <a href="blossom-edugroup-app.html" class="bottom-link">
@@ -122,7 +150,6 @@
         </div>
         <footer-component></footer-component>
     </div>
-</body>
 <script src="./dist_js/vue.js"></script>
 <script src="./dist_js/language_zh.js"></script>
 <script src="./dist_js/language_en.js"></script>
@@ -141,4 +168,5 @@
         });
     });
 </script>
+</body>
 </html>

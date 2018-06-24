@@ -46,5 +46,9 @@ var zh = {
     'redesign_phase2_content': '雖然是使用同一個模板 UI，既使功能與外型一樣，但每個不同的開發人員就產生出每個不同的寫法，導致系統內部的代碼體積與日俱增，不僅十分難以維護，也增添了許多後續開發上的困難。（事先做好規劃及規範真的很重要啊）',
     'redesign_phase3_title': 'PHASE #3 從根基上延伸，拓展新功能',
     'redesign_phase3_content': '隨著用戶漸多，用戶開始回饋產品能增添的新功能（如：一次大量送件、連結電子商店）。要如何在用戶已習慣的流程形式中，不突兀且自然地加入新的步驟，這是 Redesign 最困難的部分。',
-    'case_result1_carousel': [['6Connect 的目標客群我們稱之為 Customer，主要是為了尋找符合物流需求又低價的快遞服務。在 Customer 登入後，在主畫面提示他們可以做些什麼並且加入誘因 （如：想要得到更優惠的價格嗎？那就設置一個付款帳號吧），下方則用詢問對話的方式提醒用戶使用這個系統的主要目的 — 現在想要寄送什麼類型的貨物呢？在回答問題的同時，也等於快速開啟一張運送需求單，成功降低用戶初次開單的難度。', './images/product_redesign/case_home_page_6c.png', '6Connect - the home page'], ['6Parcels 的目標客群我們稱之為 Courier，他們的目的是能在此系統簡易地建立並管理自己的運送單，或透過連接 6Connect 獲取更多訂單量。而不管 Courier 是否要連接 6Connect，他們的首要且必要的動作就是建立至少一項貨物運送服務，有了服務才能繼續進行開單或接單的工作。於是在 Courier 初次登入系統時，清楚地告知用戶第一件要做的事 — "Create Services"。此後，用戶不再困惑為什麼總是無法開單或等不到貨運需求。', './images/product_redesign/case_home_page_6p.png', '6Parcels - the home page']]
+    'case1_carousel': [['6Connect 的目標客群我們稱之為 Customer，主要是為了尋找符合物流需求又低價的快遞服務。在 Customer 登入後，在主畫面提示他們可以做些什麼並且加入誘因 （如：想要得到更優惠的價格嗎？那就設置一個付款帳號吧），下方則用詢問對話的方式提醒用戶使用這個系統的主要目的 — 現在想要寄送什麼類型的貨物呢？在回答問題的同時，也等於快速開啟一張運送需求單，降低用戶初次開單的難度。', './images/product_redesign/case_home_page_6c.png', '6Connect - the home page'], ['6Parcels 的目標客群我們稱之為 Courier，他們的目的是能在此系統簡易地建立並管理自己的運送單，或透過連接 6Connect 獲取更多訂單量。而不管 Courier 是否要連接 6Connect，他們的首要且必要的動作就是建立至少一項貨物運送服務，有了服務才能繼續進行開單或接單的工作。於是在 Courier 初次登入系統時，清楚地告知用戶第一件要做的事 — "Create Services"。用戶不再困惑為什麼總是無法開單或等不到貨運需求。', './images/product_redesign/case_home_page_6p.png', '6Parcels - the home page']],
+    'redesign_result1': '由於資訊量降低，用戶的視覺負擔也相對降低，再加上步驟式的引導語句，成功地提升了產品的易用度，大幅減少新客戶的尋求協助來電。',
+    'redesign_case2_contect': '在不違反產品的介面及流程操作下，要增添新的功能，我循環以下這些方式藉以達成此階段任務：',
+    'redesign_case2_methods': ['繪製流程圖', '大量參考同一類型的產品如何呈現', '製作線框圖，確認步驟流程是否順暢', '不停地詢問＂為什麼＂（必要之惡）', '與技術團隊討論設計上的可行性'],
+    'case1_carousel_url': ['./images/product_redesign/case2_img1.jpg', './images/product_redesign/case2_img2.jpg', './images/product_redesign/case2_img3.jpg', './images/product_redesign/case2_img4.jpg', './images/product_redesign/case2_img5.jpg']
 };

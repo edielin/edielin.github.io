@@ -88,7 +88,11 @@ new Vue ({
             redesign_phase2_content: '',
             redesign_phase3_title: '',
             redesign_phase3_content: '',
-            case_result1_carousel: []
+            case1_carousel: [],
+            redesign_result1: '',
+            redesign_case2_contect: '',
+            redesign_case2_methods: [],
+            case1_carousel_url: []
         },
         lang_zh: true,
         lang: {
