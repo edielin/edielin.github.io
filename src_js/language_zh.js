@@ -1,5 +1,5 @@
 let zh = {
-    'index_sentence1': '「不斷吸取新的觀點和方法，不停探索周圍環境中人們的各個方面。」',
+    'index_sentence1': '「不斷吸取新的觀點和方法、不停探索周圍環境中人們的各個方面。」',
     'index_sentence2': '擁有兩年的 UI/UX 設計經驗，目前正在尋找 UX 設計師的相關工作。是個網路成癮者，但也喜愛在大自然裡走動',
     'index_sentence3': '可以在<a href="./download/edie_lin_resume2018_zh.pdf" class="link-blue">這邊下載我的簡歷</a> 💡',
     'about_me': '哈囉你好，我是林佳瑩，你可以叫我 Edie (音同ED)，擁有兩年的 UI/UX 設計經驗，可幫助您提升用戶體驗及轉換率。而與其說 UX 是一種技能，我更傾向它是一種思考模式，透過不斷思索、模擬與測試驗證，一步一步建構出符合使用者需求、商業目標、技術能力的優良產品。了解前端開發，具備能與工程師溝通的共同語言。<br />歡迎<a href="./download/edie_lin_resume2018_zh.pdf" class="link-blue">下載我的簡歷</a> 💡',
