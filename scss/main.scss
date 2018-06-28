@@ -360,6 +360,7 @@ section {
 }
 #up-to-top {
     position: fixed;
+    z-index: 99;
     right: 50px;
     bottom: 20px;
     @include phone-xxs-media {
