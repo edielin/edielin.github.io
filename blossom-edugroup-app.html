@@ -28,7 +28,7 @@
             <div class="container text-center">
                 <img src="./images/app_blossom/blossom_icon.png" class="app-icon" alt="Blossom Edugroup App">
                 <h2 class="caption">BLOSSOM EDUGROUP APP</h2>
-                <p class="content-text">{{temp.app_introduce}}</p>
+                <p class="content-text" v-cloak>{{temp.app_introduce}}</p>
                 <ul class="check-tools">
                     <li>UI</li>
                     <li>UX</li>
@@ -42,24 +42,24 @@
         <section class="green-bg">
             <div class="container text-center">
                 <h2 class="caption">DESIGN PROCESS</h2>
-                <p class="content-text">{{temp.app_5w1h}}</p>
+                <p class="content-text" v-cloak>{{temp.app_5w1h}}</p>
                 <div class="wh-group">
                     <h4 class="wh-topic">Who</h4>
-                    <p class="wh-contact-text" v-html="temp.app_who"></p>
+                    <p class="wh-contact-text" v-html="temp.app_who" v-cloak></p>
                 </div>
                 <div class="wh-group">
                     <h4 class="wh-topic">What & How</h4>
-                    <p class="wh-contact-text" v-html="temp.app_what_how"></p>
+                    <p class="wh-contact-text" v-html="temp.app_what_how" v-cloak></p>
                 </div>
                 <div class="wh-group">
                     <h4 class="wh-topic">Why</h4>
-                    <p class="wh-contact-text" v-html="temp.app_why"></p>
+                    <p class="wh-contact-text" v-html="temp.app_why" v-cloak></p>
                 </div>
                 <div class="wh-group">
                     <h4 class="wh-topic">Where & When</h4>
-                    <p class="wh-contact-text" v-html="temp.app_where_when"></p>
+                    <p class="wh-contact-text" v-html="temp.app_where_when" v-cloak></p>
                 </div>
-                <p class="content-text text-mark">{{temp.app_5w1h_goodgood}}</p>
+                <p class="content-text text-mark" v-cloak>{{temp.app_5w1h_goodgood}}</p>
                 <div class="process-balls-box">
                     <div class="process-ball active">Empathize</div>
                     <div class="process-ball">Define</div>
@@ -73,13 +73,13 @@
         <section class="flow-chart-bg">
             <div class="container text-center">
                 <h2 class="caption">FLOW CHART</h2>
-                <p class="content-text">{{temp.flow_chart}}</p>
+                <p class="content-text" v-cloak>{{temp.flow_chart}}</p>
             </div>
         </section>
         <section class="grey-bg">
             <div class="container text-center">
                 <h2 class="caption">WIREFRAME</h2>
-                <p class="content-text">{{temp.wireframe}}</p>
+                <p class="content-text" v-cloak>{{temp.wireframe}}</p>
                 <div class="wireframe-box">
                     <div class="wireframe-img">
                         <img src="./images/app_blossom/wireframe_01.jpg" alt="Wireframe sketch-1">
@@ -97,7 +97,7 @@
             <div class="container">
                 <div class="col-lg-6 col-sm-6 col-xs-12 text-center-xs">
                     <h2 class="caption">PROTOTYPING</h2>
-                    <p class="content-text margin-bottom" v-html="temp.prototyping"></p>
+                    <p class="content-text margin-bottom" v-html="temp.prototyping" v-cloak></p>
                 </div>
                 <div class="col-lg-6 col-sm-6 col-xs-12 text-center">
                     <img src="./images/app_blossom/blossom_prototype.gif" alt="Prototyping">
@@ -108,7 +108,7 @@
         <section class="app-design-high-light-bg">
             <div class="container text-center">
                 <h2 class="caption">DESIGN HIGHLIGHTS</h2>
-                <p class="content-text" v-html="temp.app_design_high_light"></p>
+                <p class="content-text" v-html="temp.app_design_high_light" v-cloak></p>
             </div>
         </section>
         <div class="bottom-link-box">

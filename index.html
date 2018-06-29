@@ -24,6 +24,8 @@
     <title>Edie Lin | UI/UX Designer</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <script src="./dist_js/vue.js"></script>
+    <script src="./dist_js/jquery.min.js"></script>
     <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="./style/icons.css">
     <link rel="stylesheet" href="./style/main.css">
@@ -36,8 +38,8 @@
                 <div class="container text-center">
                     <h2 class="caption">EDIE LIN, UI/UX DESIGNER</h2>
                     <div class="content-text">
-                        <p>{{temp.index_sentence1}}</p>
-                        <p>{{temp.index_sentence2}}</p>
+                        <p v-cloak>{{temp.index_sentence1}}</p>
+                        <p v-cloak>{{temp.index_sentence2}}</p>
                         <p v-html="temp.index_sentence3"></p>
                     </div>
                 </div>

@@ -7,7 +7,6 @@ body {
     font-family: "Ubuntu", "Microsoft JhengHei", "微軟正黑體", "PingFang TC", "Open Sans", sans-serif, Arial;
     color: $main-black;
     font-size: 18px;
-    height: 100%;
     @include phone-xxs-media {
         font-size: 16px;
     }
@@ -39,14 +38,19 @@ hr, p, address {
 }
 
 #app {
-    min-height: 100%;
+    min-height: calc(100vh - 100px);
     height: auto !important;
     height: 100%;
     position: relative;
     padding-bottom: 100px; 
     @include phone-xxs-media {
+        min-height: calc(100vh - 70px);
         padding-bottom: 70px;
     }
+}
+
+[v-cloak] {
+    display: none;
 }
 
 header, footer {
@@ -284,8 +288,8 @@ section {
 // about
 .my-photo {
     margin: 40px auto 0;
-    max-width: 400px;
-    height: 500px;
+    max-width: 300px;
+    height: 368px;
     border-radius: 4px;
     overflow: hidden;
     img {
@@ -314,6 +318,36 @@ section {
         &.codepen { color: $codepen; }
         &.linkedin { color: $linkedin; }
     }
+    &.show-info {
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            border: 8px solid transparent;
+            border-bottom: 8px solid $main-black;
+            bottom: -12px;
+            left: 11px;
+            display: none;
+        }
+        &:after {
+            content: attr(data-info);
+            position: absolute;
+            padding: 3px 8px 4px;
+            border-radius: 4px;
+            font-size: 16px;
+            white-space: nowrap;
+            background-color: $main-black;
+            color: #fff;
+            bottom: -2.25rem;
+            left: 4px;
+            display: none;
+        }
+        &:hover {
+            &:before, &:after {
+                display: block;
+            }
+        }
+    }
 }
 
 .about-group {
@@ -338,7 +372,7 @@ section {
         opacity: 0.85;
     }
     font-size: 16px;
-    color: $sub-black;
+    color: $main-black;
     @include phone-xxs-media {
         font-size: 14px;
     }

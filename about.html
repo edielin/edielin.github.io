@@ -46,8 +46,8 @@
                     </section>
                     <section>
                         <h2 class="caption">CONTACT & FIND ME</h2>
-                        <a class="contact-icon gmail" href="mailto:edielin.led@gmail.com"><span class="icon-envelop"></span></a>
-                        <a class="contact-icon" href="tel:+886910879567"><span class="icon-phone"></span></a>
+                        <a class="contact-icon gmail show-info" href="mailto:edielin.led@gmail.com" data-info="edielin.led@gmail.com"><span class="icon-envelop"></span></a>
+                        <a class="contact-icon show-info" href="tel:+886910879567" data-info="+886 910 879567"><span class="icon-phone"></span></a>
                         <a class="contact-icon github" href="https://github.com/edielin" target="_blank"><span class="icon-github"></span></a>
                         <a class="contact-icon codepen" href="https://codepen.io/laclin/" target="_blank"><span class="icon-codepen"></span></a>
                         <a class="contact-icon linkedin" href="https://www.linkedin.com/in/edie-lin-135574166" target="_blank"><span class="icon-linkedin2"></span></a>
@@ -55,52 +55,52 @@
                     <section>
                         <h2 class="caption">EXPERIENCE</h2>
                         <div class="about-group">
-                            <h4 class="content-text hight-light">{{temp.experience_6pm}}</h4>
+                            <h4 class="content-text hight-light" v-cloak>{{temp.experience_6pm}}</h4>
                             <p class="fade-content-text">Jan 2017 - Jun 2018 (1.5 years)</p>
                             <ul class="group-list">
                                 <li v-for="(item, index) in temp.experience_6pm_list" v-html="item"></li>
                             </ul>
                         </div>
                         <div class="about-group">
-                            <h4 class="content-text hight-light">{{temp.experience_iii}}</h4>
+                            <h4 class="content-text hight-light" v-cloak>{{temp.experience_iii}}</h4>
                             <p class="fade-content-text">Jun 2016 - Dec 2016 (6 months)</p>
                             <ul class="group-list">
                                 <li v-for="(item, index) in temp.experience_iii_list" v-html="item"></li>
                             </ul>
                         </div>
                         <div class="about-group">
-                            <h4 class="content-text">{{temp.experience_service}}</h4>
+                            <h4 class="content-text" v-cloak>{{temp.experience_service}}</h4>
                             <p class="fade-content-text">2011 - Apr 2016 (4.5 years)</p>
                         </div>
                         <div class="about-group">
-                            <h4 class="content-text">{{temp.experience_print}}</h4>
+                            <h4 class="content-text" v-cloak>{{temp.experience_print}}</h4>
                             <p class="fade-content-text">2010 -2011 (1 year)</p>
                         </div>
                     </section>
                     <section>
                         <h2 class="caption">EDUCATION</h2>
-                        <h4 class="content-text darker">{{temp.education}}</h4>
+                        <h4 class="content-text darker" v-cloak>{{temp.education}}</h4>
                         <p class="fade-content-text">2005 - 2009　B.S. degree</p>
                     </section>
                     <section>
                         <h2 class="caption">SKILL & TOOLS</h2>
                         <div class="about-group">
                             <h4 class="content-text hight-light">UI/UX</h4>
-                            <p class="content-text">{{temp.skill_uiux}}</p>
+                            <p class="content-text" v-cloak>{{temp.skill_uiux}}</p>
                             <div class="about_tools">
                                 <i>draw.io, Adobe Creative Cloud</i>
                             </div>
                         </div>
                         <div class="about-group">
-                            <h4 class="content-text hight-light">{{temp.skill_f2e}}</h4>
-                            <p class="content-text">{{temp.f2e_description}}</p>
+                            <h4 class="content-text hight-light" v-cloak>{{temp.skill_f2e}}</h4>
+                            <p class="content-text" v-cloak>{{temp.f2e_description}}</p>
                             <div class="about_tools">
                                 <i>HTML, CSS(SCSS), JavaScript, Angular, Vue.js, PHP</i>
                             </div>
                         </div>
                         <div class="about-group">
-                            <h4 class="content-text hight-light">{{temp.skill_collaboration}}</h4>
-                            <p class="content-text">{{temp.collaboration_description}}</p>
+                            <h4 class="content-text hight-light" v-cloak>{{temp.skill_collaboration}}</h4>
+                            <p class="content-text" v-cloak>{{temp.collaboration_description}}</p>
                             <div class="about_tools">
                                 <i>Git, Slack, Trello, Zeplin, Adobe XD</i>
                             </div>
@@ -109,7 +109,7 @@
                     <section>
                         <h2 class="caption">INTERESTS</h2>
                         <ul class="group-list no-margin-top">
-                            <li v-for="(item, index) in temp.interest_list">{{item}}</li>
+                            <li v-for="(item, index) in temp.interest_list" v-cloak>{{item}}</li>
                         </ul>
                     </section>
                 </div>

@@ -49,7 +49,7 @@
         <section class="question-mark-bg">
             <div class="container text-center">
                 <h2 class="caption">BEFORE THE BEGINNING</h2>
-                <p class="content-text">{{temp.before_beginning}}</p>
+                <p class="content-text" v-cloak>{{temp.before_beginning}}</p>
             </div>
         </section>
         <section class="grey-bg">
@@ -57,18 +57,18 @@
                 <div class="redesign-note-box">
                     <div class="redesign-note-group" v-for="(item, index) in temp.redesign_note_list">
                         <span class="counter-number">0{{index+1}}</span>
-                        <h4 class="note-topic">{{item[0]}}</h4>
-                        <p class="content-text">{{item[1]}}</p>
+                        <h4 class="note-topic" v-cloak>{{item[0]}}</h4>
+                        <p class="content-text" v-cloak>{{item[1]}}</p>
                     </div>
                     <div class="redesign-note-conclusion">
-                        <p class="content-text">{{temp.redesign_note_conclusion}}</p>
+                        <p class="content-text" v-cloak>{{temp.redesign_note_conclusion}}</p>
                     </div>
                 </div>
             </div>
         </section>
         <section>
             <div class="container text-center">
-                <h2 class="caption">{{temp.redesign_phase1_title}}</h2>
+                <h2 class="caption" v-cloak>{{temp.redesign_phase1_title}}</h2>
                 <p class="content-text" v-html="temp.redesign_phase1_content"></p>
                 <img class="section-main-img" src="./images/product_redesign/customer_courier-01.png" alt="Define the target audience">
             </div>
@@ -76,8 +76,8 @@
         <section class="padding-none">
             <div class="container">
                 <div class="col-lg-6 col-sm-6 col-xs-12 text-center-xs">
-                    <h2 class="caption">{{temp.redesign_phase2_title}}</h2>
-                    <p class="content-text margin-bottom">{{temp.redesign_phase2_content}}</p>
+                    <h2 class="caption" v-cloak>{{temp.redesign_phase2_title}}</h2>
+                    <p class="content-text margin-bottom" v-cloak>{{temp.redesign_phase2_content}}</p>
                 </div>
                 <div class="col-lg-6 col-sm-6 col-xs-12 text-center">
                     <img src="./images/product_redesign/markus-spiske-207946-unsplash.jpg" alt="Photo by Markus Spiske on Unsplash">
@@ -88,8 +88,8 @@
         <section>
             <div class="container">
                 <div class="col-lg-6 col-sm-6 col-xs-12 pull-right text-center-xs">
-                    <h2 class="caption">{{temp.redesign_phase3_title}}</h2>
-                    <p class="content-text margin-bottom">{{temp.redesign_phase3_content}}</p>
+                    <h2 class="caption" v-cloak>{{temp.redesign_phase3_title}}</h2>
+                    <p class="content-text margin-bottom" v-cloak>{{temp.redesign_phase3_content}}</p>
                 </div>
                 <div class="col-lg-6 col-sm-6 col-xs-12 text-center-xs">
                     <img src="./images/product_redesign/people-standing-together-in-shape-of-an-arrow.png" alt="People standing together in shape of an arrow">
@@ -102,7 +102,7 @@
                 <h2 class="caption">CASE #1 THE HOME PAGE</h2>
                 <div class="owl-carousel owl-theme">
                     <div class="item" v-for="(item, index) in temp.case1_carousel">
-                        <p class="content-text">{{item[0]}}</p>
+                        <p class="content-text" v-cloak>{{item[0]}}</p>
                         <img class="section-main-img" v-bind:src="item[1]" v-bind:alt="item[2]">
                     </div>
                 </div>
@@ -111,17 +111,17 @@
         <section class="celebration-bg">
             <div class="container text-center">
                 <h2 class="caption">RESULT</h2>
-                <p class="content-text">{{temp.redesign_result1}}</p>
+                <p class="content-text" v-cloak>{{temp.redesign_result1}}</p>
             </div>
         </section>
         <section>
             <div class="container">
                 <h2 class="caption">CASE #2 CONNECT E-COMMERCE</h2>
-                <p class="content-text">{{temp.redesign_case2_contect}}</p>
+                <p class="content-text" v-cloak>{{temp.redesign_case2_contect}}</p>
                 <div>
                     <div class="col-lg-6 col-sm-6 col-xs-12">
                         <ul class="case-methods-list">
-                            <li v-for="(item, index) in temp.redesign_case2_methods">{{item}}</li>
+                            <li v-for="(item, index) in temp.redesign_case2_methods" v-cloak>{{item}}</li>
                         </ul>
                     </div>
                     <div class="col-lg-6 col-sm-6 col-xs-12">
@@ -136,7 +136,7 @@
         <section class="grey-bg ecommerce-bg">
             <div class="container text-center">
                 <h2 class="caption">RESULT</h2>
-                <p class="content-text">{{temp.result2_content}}</p>
+                <p class="content-text" v-cloak>{{temp.result2_content}}</p>
             </div>
         </section>
         <div class="bottom-link-box">
